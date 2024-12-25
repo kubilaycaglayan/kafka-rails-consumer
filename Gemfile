@@ -41,3 +41,5 @@ group :development, :test do
 end
 
 
+
+gem "karafka", ">= 2.4.0"
