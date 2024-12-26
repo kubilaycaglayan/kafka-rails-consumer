@@ -79,6 +79,10 @@ class KarafkaApp < Karafka::App
         payload: -> (payload) { payload }
       )
     end
+
+    topic 'joyjoy.users.account.created.1' do
+      consumer UsersAccountCreated1Consumer
+    end
   end
 end
 
